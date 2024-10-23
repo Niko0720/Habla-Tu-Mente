@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+/*acordeon*/
+
+.contenedor-acordeon{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 80px;
+}
+.contenedor-acordeon h2{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 35px;
+    color: rgb(145, 52, 173);
+}
+.acordeon{
+    background: #fff;
+}
+.acordeon label{
+    display: block;
+    padding: 20px;
+    font-size: 30px;
+    background: rgba(255, 255, 255, 0.527);
+    color: rgb(145, 41, 155);
+    cursor: pointer;
+    margin-bottom: 2px;
+    transition: all 300ms ease;
+    text-align: center;
+}
+
+.acordeon label:hover{
+    background: #424242b6;
+}
+
+.acordeon .contenido-acordeon{
+    padding: 0px;
+    margin: 0px 20px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 300ms ease;
+}
+.btn-acordeon:checked ~ .contenido-acordeon{
+    max-height: 600px;
+    padding: 15px 0px;
+}
+.btn-acordeon{
+    display: none;
+}
+
+.contenido-acordeon p{
+    text-indent: 2em;
+}
+
+@media screen and (max-width:900px) {
+    .contenedor-acordeon{
+        width: 90%;
+    }
+    
+}
+
+.img-acordeon{
+    width: 340px;
+    height: 340px;
+    object-fit: cover;
+    border: 3px solid rgb(66, 12, 97);
+    border-radius: 50%;
+    display: block;
+    padding: 5px 10px 5px 10px;
+    margin: 2px;
+    display:inline-block;
+}
+
+body{
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo{
+    color: #291a69;
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* Header */
+
+header{
+    width: 100%;
+    height: 700px;
+    background: #03001e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right,  #cc7ab6, #ec38bc, #7303c0, #03001e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #cc7ab6, #ec38bc, #7303c0, #03001e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav > a{
+    color: #f7f6f6;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 17px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header{
+    font-size: 50px;
+    color: #ffff;
+}
+
+.textos-header h1{
+    font-size: 75px;
+    font-weight: 300;
+    color: rgb(216, 216, 216);
+}
+
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color: rgb(216, 216, 216);
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

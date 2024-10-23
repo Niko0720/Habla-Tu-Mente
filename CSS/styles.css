@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+
+body{
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo{
+    color: #1a2e88;
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.titulo2{
+    color: #1a2e88;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Header */
+
+header{
+    width: 100%;
+    height: 700px;
+    background: #43C6AC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #191654a4, #43c6aca6) , url(../IMG/fondo5.jpg) no-repeat;  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #191654a4, #43c6aca6), url(../IMG/fondo5.jpg) no-repeat; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav > a{
+    color: #f7f6f6;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 17px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header{
+    font-size: 50px;
+    color: #ffff;
+}
+
+.textos-header h1{
+    font-size: 75px;
+    font-weight: 300;
+    color: rgb(216, 216, 216);
+}
+
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color: rgb(216, 216, 216);
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* About us */
+
+.contenedor-sobre-nosotros img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border: 3px solid rgb(20, 74, 192);
+    border-radius: 50%;
+    display: block;
+}
+
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-about-us{
+    width: 40%;
+}
+
+.sobre-nosotros .contenido-textos{
+    width: 40%;
+}
+
+.contenido-textos h3{
+    margin-bottom: 15px;
+}
+
+.contenido-textos h3 span{
+    background: #2572e7;
+    color: floralwhite;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    margin-right: 10px;
+}
+
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+    font-size: 18px;
+}
+
+/* Galeria */
+
+.portafolio{
+    background: rgb(159, 197, 216);
+}
+
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port{
+    width: 24%;
+    margin-bottom: 10px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(209, 79%, 54%, 0.377);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img{
+    width: 50px;
+}
+
+.hover-galeria p{
+    color: #000000;
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+
+.enlace{
+    font-size: 30px;
+    text-align: center;
+}
+
+/* Clients */
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards .card{
+    background: rgb(60, 106, 206);
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.781);
+}
+
+.cards .card img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #ffff;
+    border-radius: 50%;
+    display: block;
+}
+
+.cards .card > .contenido-texto-card{
+    width: 60%;
+    color: #ffff;
+}
+
+.cards .card > .contenido-texto-card p{
+    font-weight: 100;
+    padding-top: 5px;
+}
+
+/* Our team */
+
+.about-services{
+    background: #f2f2f2;
+    padding-bottom: 30px;
+}
+
+.servicio-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.servicio-ind{
+    width: 300px;
+    text-align: center;
+}
+
+.servicio-ind img{
+    width: 80%;
+}
+
+.servicio-ind h3{
+    margin: 10px 0;
+}
+
+.servico-ind p{
+    font-weight: 300;
+    text-align: justify;
+}
+
+/* footer */
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: #ffffff;
+    border-bottom: 3px solid #43C6AC;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{
+    color: rgb(245, 245, 245);
+}
+
+.titulo-final{
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #43C6AC;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #2572e7;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.felix {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%; /* Ajusta según el tamaño de tu contenedor */
+    max-width: 1200px; /* Puedes ajustar el tamaño para que se vea bien */
+    margin-top: 20px;
+    position:absolute;
+}
+
+.felix img {
+    width: 250px; /* Ajusta el tamaño de las imágenes */
+    height: auto;
+}
+
+/* Estilo de los bloques de información del footer */
+.content-foo {
+    margin-bottom: 15px;
+}
+
+
+
